@@ -21,7 +21,7 @@ enabled  = {{ fail2ban_config_jail_ssh_enabled }}
 port     = ssh
 filter   = sshd
 logpath  = /var/log/secure
-
+action   = iptables[name=SSH, port=ssh, protocol=tcp]
 
 [ssh-ddos]
 
@@ -29,3 +29,4 @@ enabled  = {{ fail2ban_config_jail_sshddos_enabled }}
 port     = ssh
 filter   = sshd-ddos
 logpath  = /var/log/secure
+action   = iptables[name=SSH, port=ssh, protocol=tcp]
