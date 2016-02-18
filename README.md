@@ -10,8 +10,8 @@ This fork is to use iptables instead of firewalld to enable this role to be used
     - hosts: all
       remote_user: root
       roles:
-      - resmo.fail2ban
+      - nimeshjm.fail2ban
 
 ## Homepage: 
 
-https://github.com/resmo/ansible-role-fail2ban
+https://github.com/nimeshjm/ansible-role-fail2ban
