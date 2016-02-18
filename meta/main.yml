@@ -17,5 +17,9 @@ galaxy_info:
     - all
   categories:
   - system
+  tags:
+  - system
+  - fail2ban
+  - centos
 
 dependencies: []
